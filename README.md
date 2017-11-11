@@ -1,6 +1,6 @@
 # openfender
 
-Openfender is a self-contained HTML and Javascript repository that will take a Quest One Identity Defender Soft Token and produce a QR code so that the One Time Password (OTP) token may be viewable from within the Google Authenticator app, versus the built-in Soft Token application available for Android, iOS, Windows, Java, etc..
+Openfender is a self-contained HTML and Javascript repository that will take the activation code from a OATH-Compliant HOTP Quest One Identity Defender Soft Token and produce a QR code so that the One Time Password (OTP) token may be viewable from within the Google Authenticator app, versus the built-in Soft Token application available for Android, iOS, Windows, Java, etc..
 
 Several third-party scripting libraries are requested locally in the HTML for portability and reference. Only JSOTP.js has been modified to correct a bug in that code (please see my fork of that repo for details) so you should feel free to grab your own versions of these same libraries if you like.
 
