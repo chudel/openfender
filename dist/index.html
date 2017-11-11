@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>openfender</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.min.js"></script>
+  <script src="des.js"></script>
+  <script src="qrcode.js"></script>
+  <script src="hi-base32.js"></script>
+  <script src="jsOTP.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="doc" class="yui-t7">
+    <div id="hd">
+      <div id="header">
+        <center>
+          <h1>openfender token translator</h1></center>
+      </div>
+    </div>
+    <div id="bd">
+      <div id="yui-main">
+        <div class="yui-b">
+          <div class="yui-gc">
+            <div class="yui-u first">
+              <div class="content">
+                Token Name:<span style="padding-left:140px">Counter/Token Code:</span>
+                <br>
+                <span style="padding-left:20px"><input style="font-size: 65%" type=text size=30 id=tname name=tname value="test@user"></span>
+                <span style="padding-left:40px"><input style="font-size: 65%" type=number size=5 id='counter' onchange="onMain()" placeholder="If known"></span>
+                <br>Issuer:
+                <br>
+                <span style="padding-left:20px"><input style="font-size: 65%" type=text size=30 id=issuer name=issuer value="Demo"></span>
+                <br>Activation Code:
+                <br>
+                <span style="padding-left:20px"><input style="font-size: 65%" type=text size=110 id=acode name=acode value="" placeholder="Enter your Defender Activation Code or 'android' or 'iphone' for the demo."></span>
+                <hr/>
+                <div id=tokenInfo style="font-size: 70%;padding-left:20px"></div>
+              </div>
+            </div>
+            <div class="yui-u">
+              <div class="content"><b>Google Authenticator Token</b>
+                <br>
+                <br>
+                <center>
+                  <div id="qrcode" style="width:200px; height:200px; margin-top:10px; margin-left:15px"></div>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="yui-b">
+        <div id="secondary"></div>
+      </div>
+    </div>
+    <div id="ft">
+      <div id="footer">
+        <br>
+        <center>
+          <div id="qrtext" style="font-size:75%"></div>
+        </center>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
